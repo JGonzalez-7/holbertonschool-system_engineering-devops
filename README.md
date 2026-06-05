@@ -32,10 +32,10 @@ each design.
 ├── README.md
 └── web_infrastructure_design/
     ├── README.md
-    ├── 0-simple_web_stack
-    ├── 1-distributed_web_infrastructure
-    ├── 2-secured_and_monitored_web_infrastructure
-    └── 3-scale_up
+    ├── 0-simple_web_stack.md
+    ├── 1-distributed_web_infrastructure.md
+    ├── 2-secured_and_monitored_web_infrastructure.md
+    └── 3-scale_up.md
 ```
 
 ## Author

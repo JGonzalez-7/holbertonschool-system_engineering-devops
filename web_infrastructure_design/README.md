@@ -2,7 +2,8 @@
 
 This project explores the components, communication paths, benefits, and
 limitations of several web infrastructure architectures. Each task is
-represented by a Mermaid diagram for the fictional domain `www.foobar.com`.
+represented by a Mermaid diagram and written explanation for the fictional
+domain `www.foobar.com`.
 
 ## Learning Objectives
 
@@ -18,12 +19,12 @@ By completing this project, you should be able to explain:
 
 ## Diagrams
 
-| File | Architecture | Description |
-| --- | --- | --- |
-| [`0-simple_web_stack`](0-simple_web_stack) | Simple web stack | A single server runs Nginx, the application server, application files, and MySQL. |
-| [`1-distributed_web_infrastructure`](1-distributed_web_infrastructure) | Distributed infrastructure | HAProxy distributes requests between two servers backed by a primary-replica MySQL setup. |
-| [`2-secured_and_monitored_web_infrastructure`](2-secured_and_monitored_web_infrastructure) | Secured and monitored infrastructure | Adds firewalls, HTTPS/SSL termination, and monitoring clients to the distributed design. |
-| [`3-scale_up`](3-scale_up) | Scaled infrastructure | Uses a load-balancer cluster and separates the web, application, and database layers onto dedicated servers. |
+| Preview file | Architecture |
+| --- | --- |
+| [`0-simple_web_stack.md`](0-simple_web_stack.md) | Simple web stack |
+| [`1-distributed_web_infrastructure.md`](1-distributed_web_infrastructure.md) | Distributed infrastructure |
+| [`2-secured_and_monitored_web_infrastructure.md`](2-secured_and_monitored_web_infrastructure.md) | Secured and monitored infrastructure |
+| [`3-scale_up.md`](3-scale_up.md) | Scaled infrastructure |
 
 ## Architecture Progression
 
@@ -77,6 +78,5 @@ independently.
 
 ## Viewing the Diagrams
 
-The task files contain fenced Mermaid syntax. Open them in a Markdown viewer
-with Mermaid support, or paste their contents into the
-[Mermaid Live Editor](https://mermaid.live/).
+Open the `.md` files in GitHub or Markdown Preview Mermaid Support to render
+the diagrams and read their accompanying explanations.
