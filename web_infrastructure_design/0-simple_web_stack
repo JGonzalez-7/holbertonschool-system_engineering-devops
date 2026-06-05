@@ -1,0 +1,20 @@
+```mermaid
+graph TD
+    User["User's Computer / Browser"] -->|Requests www.foobar.com| DNS["DNS Resolver"]
+
+    DNS -->|A record: www.foobar.com = 8.8.8.8| Server["Server - 8.8.8.8"]
+
+    subgraph ServerBox["One Server"]
+        Nginx["Web Server: Nginx"]
+        AppServer["Application Server"]
+        Code["Application Files / Codebase"]
+        MySQL["Database: MySQL"]
+
+        Nginx -->|Forwards dynamic requests| AppServer
+        AppServer -->|Uses| Code
+        AppServer -->|Reads/Writes data| MySQL
+    end
+
+    Server --> ServerBox
+    ServerBox -->|HTTP/HTTPS response over TCP/IP| User
+```
